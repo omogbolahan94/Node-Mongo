@@ -1,0 +1,35 @@
+**The data folder is where we will store all the mongoDB data fir this project
+
+***********
+DEFINITION
+***********
+DATABASE: This is a set of collections
+COLLLECTION: This is a set of documents 
+
+***********************************************************
+COMMAND TO START THE MONGODB SERVER ON THE MONGODB TERMINAL
+***********************************************************
+	mongod --dbpath=data --bind_ip 127.0.0.1
+[This will produce a default port of: 27017 when the server stared running]
+
+****************************************
+COMMAND FOR ACCESSING THE MONGODB SERVER(open another terminal to do this and ensure the serever is running before connecting to it)
+****************************************
+	mongo
+
+*************************************
+OTHER COMMAND ON THE MONGODB TERMINAL
+*************************************
+
+1) db:- to know the current database you are on. Default database is 'test'
+2) use confusion:- to create a database with name 'confusion'
+3) db.help() :- to see list of command that can be used in mondb
+4) db.dishes:- to create a collection named dishes
+5) exit:- to exit the Mongo REPL
+
+**********************************
+MANIPULATING THE dishes COLLECTION
+**********************************
+
+1) db.dishes.insert({"name": "Uthomp", "description": "Test"}):- to insert a document to the dishes collection in our database
+2) db.dishes.find() :- return all the documents in the dishes collection
